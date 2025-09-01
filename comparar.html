@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ENLAÇADOS - Ecossistema Educacional</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#7C3AED',
+                            'primary-hover': '#6D28D9',
+                            'bg-dark': '#0B0B10',
+                            'neutral-light': '#E5E7EB',
+                            'neutral-medium': '#9CA3AF'
+                        },
+                        fontFamily: {
+                            'inter': ['Inter', 'sans-serif']
+                        }
+                    }
+                }
+            }
+        </script>
+        <!-- External stylesheet containing global styles and hover effects -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="bg-bg-dark text-neutral-light font-inter scroll-smooth">
+    <!-- Navbar with logo and navigation links -->
+    <nav class="fixed top-0 w-full bg-bg-dark/90 backdrop-blur-md border-b border-neutral-medium/20 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Site logo and name -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-2" aria-label="Ir para página inicial">
+                        <img src="logo.png" alt="Logo Enlaçados" class="h-8 w-8">
+                        <span class="text-2xl font-bold gradient-text">ENLAÇADOS</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="instituicoes.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Instituições">Instituições</a>
+                        <a href="profissionais.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Profissionais">Profissionais</a>
+                        <a href="comparar.html" class="text-primary font-semibold" aria-label="Ir para página Comparar">Comparar</a>
+                        <a href="planos.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Planos">Planos</a>
+                        <a href="sobre.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Sobre">Sobre</a>
+                        <a href="contato.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Contato">Contato</a>
+                        <a href="login.html" class="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-lg transition-colors focus-visible:focus" aria-label="Fazer login">Entrar</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-neutral-light hover:text-primary focus-visible:focus" aria-label="Abrir menu mobile">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-bg-dark border-t border-neutral-medium/20">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="instituicoes.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Instituições</a>
+                <a href="profissionais.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Profissionais</a>
+                <a href="comparar.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Comparar</a>
+                <a href="planos.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Planos</a>
+                <a href="sobre.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Sobre</a>
+                <a href="contato.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Contato</a>
+                <a href="login.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Entrar</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Comparar Instituições</h1>
+            <p class="text-xl text-neutral-medium mb-12">
+                Escolher a escola ou faculdade ideal ficou mais fácil. Com o comparador da Enlaçados você analisa
+                infraestrutura, metodologia, corpo docente, avaliações de pais e alunos e muito mais. Filtre suas
+                preferências e veja todas as opções lado a lado para tomar a melhor decisão.
+            </p>
+            <div class="bg-bg-dark/50 p-8 rounded-xl border border-neutral-medium/20 card-hover-zoom max-w-4xl mx-auto">
+                <h2 class="text-2xl font-semibold mb-4">Como funciona</h2>
+                <ul class="space-y-4 text-left text-sm text-neutral-medium">
+                    <li class="flex items-start">
+                        <span class="mr-3 text-primary">✓</span>
+                        <p>Selecione critérios como localização, tipo de ensino, faixas de preço e atividades extracurriculares.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-primary">✓</span>
+                        <p>Compare notas, avaliações e comentários de outras famílias para cada instituição.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-primary">✓</span>
+                        <p>Visualize lado a lado as características de cada escola ou faculdade: infraestrutura, corpo docente e metodologia.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-primary">✓</span>
+                        <p>Salve suas instituições favoritas para uma análise posterior ou compartilhe sua lista com a família.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="planos.html" class="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+                    Ver Planos
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-bg-dark/90 border-t border-neutral-medium/20 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="font-semibold mb-4">Sobre</h4>
+                    <ul class="space-y-2 text-neutral-medium">
+                        <li><a href="nossa-historia.html" class="hover:text-primary transition-colors">Nossa História</a></li>
+                        <li><a href="missao-valores.html" class="hover:text-primary transition-colors">Missão e Valores</a></li>
+                        <li><a href="equipe.html" class="hover:text-primary transition-colors">Equipe</a></li>
+                        <li><a href="carreiras.html" class="hover:text-primary transition-colors">Carreiras</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-neutral-medium">
+                        <li><a href="suporte.html" class="hover:text-primary transition-colors">Suporte</a></li>
+                        <li><a href="vendas.html" class="hover:text-primary transition-colors">Vendas</a></li>
+                        <li><a href="parcerias.html" class="hover:text-primary transition-colors">Parcerias</a></li>
+                        <li><a href="imprensa.html" class="hover:text-primary transition-colors">Imprensa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-neutral-medium">
+                        <li><a href="lgpd.html" class="hover:text-primary transition-colors">LGPD</a></li>
+                        <li><a href="termos.html" class="hover:text-primary transition-colors">Termos de Uso</a></li>
+                        <li><a href="privacidade.html" class="hover:text-primary transition-colors">Política de Privacidade</a></li>
+                        <li><a href="cookies.html" class="hover:text-primary transition-colors">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-neutral-medium/20 mt-8 pt-8 text-center text-neutral-medium text-sm">
+                <p>&copy; 2025 ENLAÇADOS. Ecossistema digital que conecta famílias, instituições e profissionais.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Carrega o script unificado para o comportamento do menu, scroll e formulários -->
+    <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+/* Global styles for Enlaçados site */
+/* Glassmorphism card background and border */
+.glassmorphism {
+    background: rgba(124, 58, 237, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+/* Gradient text used for headings and logo */
+.gradient-text {
+    background: linear-gradient(135deg, #7C3AED, #A855F7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Enable smooth scrolling for anchor links */
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+.focus-visible:focus {
+    outline: 2px solid #7C3AED;
+    outline-offset: 2px;
+}
+
+/* Hover zoom effect for cards */
+/*
+ * card-hover-zoom
+ *
+ * Applies a uniform zoom and neon glow on hover. Cards using this class
+ * should appear slightly smaller by default, then scale up and emit a
+ * subtle purple glow when hovered. The scale factor is tuned to
+ * approximate the size difference between the smallest and largest cards
+ * in the hero section, creating the illusion of expansion to the size
+ * of the “Laudo Digital” card. A transition on border color is also
+ * included to enhance the neon effect on cards with borders.
+ */
+.card-hover-zoom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-hover-zoom:hover {
+    /* Increase the scale more noticeably to simulate expansion */
+    transform: scale(1.08);
+    /* Neon purple glow: two layered shadows for depth */
+    box-shadow: 0 0 15px 4px rgba(124, 58, 237, 0.5), 0 0 8px 2px rgba(124, 58, 237, 0.8);
+    /* Highlight the border with a brighter purple if the card has a border */
+    border-color: #A855F7;
+}

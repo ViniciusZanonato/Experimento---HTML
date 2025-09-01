@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ENLAÇADOS - Ecossistema Educacional</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#7C3AED',
+                            'primary-hover': '#6D28D9',
+                            'bg-dark': '#0B0B10',
+                            'neutral-light': '#E5E7EB',
+                            'neutral-medium': '#9CA3AF'
+                        },
+                        fontFamily: {
+                            'inter': ['Inter', 'sans-serif']
+                        }
+                    }
+                }
+            }
+        </script>
+        <!-- External stylesheet containing global styles and hover effects -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="bg-bg-dark text-neutral-light font-inter scroll-smooth">
+    <!-- Navbar with logo and navigation links -->
+    <nav class="fixed top-0 w-full bg-bg-dark/90 backdrop-blur-md border-b border-neutral-medium/20 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Site logo and name -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-2" aria-label="Ir para página inicial">
+                        <img src="logo.png" alt="Logo Enlaçados" class="h-8 w-8">
+                        <span class="text-2xl font-bold gradient-text">ENLAÇADOS</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="instituicoes.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Instituições">Instituições</a>
+                        <a href="profissionais.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Profissionais">Profissionais</a>
+                        <a href="comparar.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Comparar">Comparar</a>
+                        <a href="planos.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Planos">Planos</a>
+                        <a href="sobre.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Sobre">Sobre</a>
+                        <a href="contato.html" class="text-neutral-light hover:text-primary transition-colors focus-visible:focus" aria-label="Ir para página Contato">Contato</a>
+                        <a href="login.html" class="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-lg transition-colors focus-visible:focus" aria-label="Fazer login">Entrar</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-neutral-light hover:text-primary focus-visible:focus" aria-label="Abrir menu mobile">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-bg-dark border-t border-neutral-medium/20">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="instituicoes.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Instituições</a>
+                <a href="profissionais.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Profissionais</a>
+                <a href="comparar.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Comparar</a>
+                <a href="planos.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Planos</a>
+                <a href="sobre.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Sobre</a>
+                <a href="contato.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Contato</a>
+                <a href="login.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Entrar</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Laudo Digital</h1>
+            <p class="text-xl text-neutral-medium mb-12">
+                Guarde, gerencie e compartilhe documentos e relatórios de maneira simples, segura e conforme a
+                legislação. O Laudo Digital da Enlaçados assegura que laudos médicos e pedagógicos estejam
+                criptografados e acessíveis apenas por quem você permitir.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-bg-dark/50 p-6 rounded-xl border border-neutral-medium/20 card-hover-zoom">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <!-- Shield Icon -->
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6l-8 3v6c0 5.523 3.582 10.74 8 12 4.418-1.26 8-6.477 8-12V9l-8-3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Segurança e Privacidade</h3>
+                    <p class="text-sm text-neutral-medium">Arquivos criptografados e compartilhamento com controle de
+                    acesso, garantindo conformidade com a LGPD.</p>
+                </div>
+                <div class="bg-bg-dark/50 p-6 rounded-xl border border-neutral-medium/20 card-hover-zoom">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <!-- Upload Icon -->
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2m-4-4l-4-4m0 0l-4 4m4-4v12" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Armazenamento Ilimitado</h3>
+                    <p class="text-sm text-neutral-medium">Faça upload de relatórios, documentos e prontuários sem se
+                    preocupar com espaço ou organização.</p>
+                </div>
+                <div class="bg-bg-dark/50 p-6 rounded-xl border border-neutral-medium/20 card-hover-zoom">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <!-- Share Icon -->
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 8a3 3 0 100-6 3 3 0 000 6zm-9 8a3 3 0 110-6 3 3 0 010 6zm9 8a3 3 0 100-6 3 3 0 000 6zm0-13l-7 4m7-4l-7-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Compartilhamento Inteligente</h3>
+                    <p class="text-sm text-neutral-medium">Compartilhe laudos com escolas e profissionais por tempo
+                    determinado, com total controle de acesso e histórico de visualização.</p>
+                </div>
+                <div class="bg-bg-dark/50 p-6 rounded-xl border border-neutral-medium/20 card-hover-zoom">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <!-- Lock Icon -->
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 0h12a2 2 0 002-2V9a2 2 0 00-2-2h-2.586a1 1 0 01-.707-.293L12 3.414l-2.707 3.293A1 1 0 018.586 7H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Conformidade LGPD</h3>
+                    <p class="text-sm text-neutral-medium">Garantimos a proteção de dados sensíveis e a conformidade com as
+                    normas legais brasileiras.</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="planos.html" class="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+                    Ver Planos com Laudo Digital
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-bg-dark/90 border-t border-neutral-medium/20 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="font-semibold mb-4">Sobre</h4>
+                    <ul class="space-y-2 text-neutral-medium">
+                        <li><a href="nossa-historia.html" class="hover:text-primary transition-colors">Nossa História</a></li>
+                        <li><a href="missao-valores.html" class="hover:text-primary transition-colors">Missão e Valores</a></li>
+                        <li><a href="equipe.html" class="hover:text-primary transition-colors">Equipe</a></li>
+                        <li><a href="carreiras.html" class="hover:text-primary transition-colors">Carreiras</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-neutral-medium">
+                        <li><a href="suporte.html" class="hover:text-primary transition-colors">Suporte</a></li>
+                        <li><a href="vendas.html" class="hover:text-primary transition-colors">Vendas</a></li>
+                        <li><a href="parcerias.html" class="hover:text-primary transition-colors">Parcerias</a></li>
+                        <li><a href="imprensa.html" class="hover:text-primary transition-colors">Imprensa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-neutral-medium">
+                        <li><a href="lgpd.html" class="hover:text-primary transition-colors">LGPD</a></li>
+                        <li><a href="termos.html" class="hover:text-primary transition-colors">Termos de Uso</a></li>
+                        <li><a href="privacidade.html" class="hover:text-primary transition-colors">Política de Privacidade</a></li>
+                        <li><a href="cookies.html" class="hover:text-primary transition-colors">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-neutral-medium/20 mt-8 pt-8 text-center text-neutral-medium text-sm">
+                <p>&copy; 2025 ENLAÇADOS. Ecossistema digital que conecta famílias, instituições e profissionais.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Carrega o script unificado para o comportamento do menu, scroll e formulários -->
+    <script src="js/main.js"></script>
+    </body>
+</html>

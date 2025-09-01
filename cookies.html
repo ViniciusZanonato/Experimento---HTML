@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ENLAÇADOS - Política de Cookies</title>
+        <!-- Tipografia base -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Tailwind CSS via CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#7C3AED',
+                            'primary-hover': '#6D28D9',
+                            'bg-dark': '#0B0B10',
+                            'neutral-light': '#E5E7EB',
+                            'neutral-medium': '#9CA3AF'
+                        },
+                        fontFamily: {
+                            'inter': ['Inter', 'sans-serif']
+                        }
+                    }
+                }
+            }
+        </script>
+        <!-- Estilos globais (glassmorphism, gradiente e zoom em cards) -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="bg-bg-dark text-neutral-light font-inter scroll-smooth">
+    <!-- Navbar com destaque em Sobre -->
+    <nav class="fixed top-0 w-full bg-bg-dark/90 backdrop-blur-md border-b border-neutral-medium/20 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-2" aria-label="Ir para página inicial">
+                        <img src="logo.png" alt="Logo Enlaçados" class="h-8 w-8">
+                        <span class="text-2xl font-bold gradient-text">ENLAÇADOS</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="instituicoes.html" class="text-neutral-light hover:text-primary transition-colors">Instituições</a>
+                        <a href="profissionais.html" class="text-neutral-light hover:text-primary transition-colors">Profissionais</a>
+                        <a href="comparar.html" class="text-neutral-light hover:text-primary transition-colors">Comparar</a>
+                        <a href="planos.html" class="text-neutral-light hover:text-primary transition-colors">Planos</a>
+                        <a href="sobre.html" class="text-primary font-semibold">Sobre</a>
+                        <a href="contato.html" class="text-neutral-light hover:text-primary transition-colors">Contato</a>
+                        <a href="login.html" class="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-lg transition-colors">Entrar</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-neutral-light hover:text-primary focus-visible:focus" aria-label="Abrir menu mobile">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="md:hidden hidden bg-bg-dark border-t border-neutral-medium/20">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="instituicoes.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Instituições</a>
+                <a href="profissionais.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Profissionais</a>
+                <a href="comparar.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Comparar</a>
+                <a href="planos.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Planos</a>
+                <a href="sobre.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Sobre</a>
+                <a href="contato.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Contato</a>
+                <a href="login.html" class="block px-3 py-2 text-neutral-light hover:text-primary transition-colors">Entrar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal: Cookies -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Política de Cookies</h1>
+            <p class="text-xl text-neutral-medium mb-8">Entenda como utilizamos cookies para melhorar sua experiência e
+            garantir transparência no uso de dados.</p>
+            <div class="space-y-10">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-3 gradient-text">O que são cookies?</h2>
+                    <p class="text-neutral-medium mb-4">Cookies são pequenos arquivos de texto armazenados no seu navegador
+                    quando você acessa a plataforma. Eles ajudam a lembrar suas preferências,
+                    possibilitam sessões seguras e coletam dados estatísticos anônimos para
+                    aprimorar continuamente nossos serviços.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-3 gradient-text">Como utilizamos cookies</h2>
+                    <p class="text-neutral-medium mb-4">Usamos cookies estritamente necessários para que você possa
+                    navegar e utilizar funções essenciais (como login e salvamento de
+                    preferências) e cookies de desempenho para analisar como a plataforma é
+                    utilizada. Essas informações são agregadas e não identificam o usuário
+                    individualmente. Valorizamos a transparência e a confiança em todas as
+                    interações.</p>
+                    <p class="text-neutral-medium">Também utilizamos cookies funcionais para personalizar sua
+                    experiência, por exemplo, lembrando suas escolhas anteriores ou idioma
+                    preferido. Não utilizamos cookies para fins de publicidade ou para vender
+                    dados a terceiros.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-3 gradient-text">Gerenciamento de cookies</h2>
+                    <p class="text-neutral-medium mb-4">Você pode, a qualquer momento, controlar ou desativar cookies
+                    através das configurações do seu navegador. Entretanto, desabilitar
+                    determinados cookies pode afetar a funcionalidade da plataforma. Ao
+                    continuar a usar o ENLAÇADOS, você concorda com o uso de cookies conforme
+                    descrito nesta política.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer class="bg-bg-dark/90 border-t border-neutral-medium/20 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="font-semibold mb-4">Sobre</h4>
+                    <ul class="space-y-2 text-neutral-medium">
+                        <li><a href="nossa-historia.html" class="hover:text-primary transition-colors">Nossa História</a></li>
+                        <li><a href="missao-valores.html" class="hover:text-primary transition-colors">Missão e Valores</a></li>
+                        <li><a href="equipe.html" class="hover:text-primary transition-colors">Equipe</a></li>
+                        <li><a href="carreiras.html" class="hover:text-primary transition-colors">Carreiras</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-neutral-medium">
+                        <li><a href="suporte.html" class="hover:text-primary transition-colors">Suporte</a></li>
+                        <li><a href="vendas.html" class="hover:text-primary transition-colors">Vendas</a></li>
+                        <li><a href="parcerias.html" class="hover:text-primary transition-colors">Parcerias</a></li>
+                        <li><a href="imprensa.html" class="hover:text-primary transition-colors">Imprensa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-neutral-medium">
+                        <li><a href="lgpd.html" class="hover:text-primary transition-colors">LGPD</a></li>
+                        <li><a href="termos.html" class="hover:text-primary transition-colors">Termos de Uso</a></li>
+                        <li><a href="privacidade.html" class="hover:text-primary transition-colors">Política de Privacidade</a></li>
+                        <li><a href="cookies.html" class="hover:text-primary transition-colors">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-neutral-medium/20 mt-8 pt-8 text-center text-neutral-medium text-sm">
+                <p>&copy; 2025 ENLAÇADOS. Ecossistema digital que conecta famílias, instituições e profissionais.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Script principal -->
+    <script src="js/main.js"></script>
+    </body>
+</html>
